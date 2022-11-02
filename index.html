@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Images/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                birdSize: 2.00,
+                wingSpan: 25.00,
+                separation: 50.00,
+                alignment: 50.00,
+                cohesion: 50.00,
+                quantity: 3.00,
+                backgroundAlpha: 0.0,
+            })
+            setTimeout(() => {
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            }, 1000)
+        })
+    </script>
+    <title>Utsav Addy - Links</title>
+
+<body>
+    <main>
+        <div id="vanta"></div>
+        <header>
+            <img src="./Images/myImg.jpg" alt="My Img">
+            <h1 class="heading">Utsav Addy</h1>
+        </header>
+        <ul>
+            <li>
+                <img class="icons" src="./Images/linkedin.png" alt="LinkedIn Icon" width="20" />
+                <a href="https://www.linkedin.com/in/utsav-addy-42ab15208/">
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <img class="icons" src="./Images/github.png" alt="LinkedIn Icon" width="20" />
+                <a href="https://github.com/UTSAV18">
+                    GitHub
+                </a>
+            </li>
+            <li>
+                <img class="icons" src="./Images/youtube.png" alt="LinkedIn Icon" width="20" />
+                <a href="https://www.youtube.com/channel/UC4QIiU7ZMtBvLlS-qiT--FA">
+                    YouTube
+                </a>
+            </li>
+            <li>
+                <img class="icons" src="./Images/instagram.png" alt="LinkedIn Icon" width="20" />
+                <a href="https://www.instagram.com/dunifx?igshid=YmMyMTA2M2Y=">
+                    Dunifx
+                </a>
+            </li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
